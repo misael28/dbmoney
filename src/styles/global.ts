@@ -12,6 +12,15 @@ export const GlobalStyle = createGlobalStyle`
 		--shape:#ffffff;
 	}
 
+	body, input, text-area, button {
+		font-family: 'Ponpins', sans-serif;
+		font-weight: 400;
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		font-weight: 600;
+	}
+
 	* {
 		margin: 0;
 		padding: 0;
