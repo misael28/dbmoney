@@ -9,7 +9,6 @@ export const GlobalStyle = createGlobalStyle`
 		--blue-light: #6933FF;
 		--text-title:#363F5F;
 		--text-body: #969cb3;
-		--background: #f0f25f;
 		--shape:#ffffff;
 	}
 
@@ -68,6 +67,9 @@ export const GlobalStyle = createGlobalStyle`
 	.react-modal-content{
 		width: 100%;
 		max-width: 576px;
-		background: "white";
+		background: var(--background);
+		padding:3rem;
+		position: relative;
+		border-radius: 0.25rem;
 	}
 `;
