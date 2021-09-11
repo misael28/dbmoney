@@ -8,7 +8,7 @@ interface Transaction {
   amount: number;
   type: string;
   category: string;
-  createdAt: string;
+  createdAt: Date;
 }
 export function TransactionsTable() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
@@ -40,9 +40,7 @@ export function TransactionsTable() {
               </td>
               <td>{transaction.category}</td>
               <td>
-                {new Intl.DateTimeFormat("pt-BR").format(
-                  new Date(transaction.createdAt)
-                )}
+                {new Intl.DateTimeFormat("pt-BR").format(transaction.createdAt)}
               </td>
             </tr>
           ))}
